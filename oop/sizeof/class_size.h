@@ -2,8 +2,8 @@
 // Created by 叶小辉 on 2023/5/19.
 //
 
-#ifndef C_PLUS_CLASS_OOP_H
-#define C_PLUS_CLASS_OOP_H
+#ifndef C_PLUS_CLASS_SIZE_H
+#define C_PLUS_CLASS_SIZE_H
 
 // 基类
 class BaseClass {
@@ -18,4 +18,4 @@ class DerivedClass : public BaseClass
 };
 
 
-#endif //C_PLUS_CLASS_OOP_H
+#endif //C_PLUS_CLASS_SIZE_H
