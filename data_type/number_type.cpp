@@ -4,38 +4,45 @@
 #include <iostream>
 
 using namespace std;
+
 void printUnsignedNumber();
 
-int main()
-{
+int main() {
 
-    printUnsignedNumber();
-    int i = 2;
+    short sMin = SHRT_MIN;
+    short sMax = SHRT_MAX;
+    cout << sMin << "\t" << sMax << endl;
+
+    int iMin = INT_MIN;
+    int iMax = INT_MAX;
+    cout << iMin << "\t" << iMax << endl;
+
+    long lMin = LONG_MIN;
+    long lMax = LONG_MAX;
+    cout << lMin << "\t" << lMax << endl;
+
+    long long llMin = LLONG_MIN;
+    long long llMax = LLONG_MAX;
+    cout << llMin << "\t" << llMax << endl;
+
     int a = 9, b = 7;
     int c = 011, d = 07;
     cout << a << " " << b << endl;
     cout << c << " " << d << endl;
 
+    cout << "short is " << sizeof(short) << " bytes." << endl;
+    cout << "int is " << sizeof(int) << " bytes." << endl;
+    cout << "long is " << sizeof(long) << " bytes." << endl;
+    cout << "long long is " << sizeof(long long ) << " bytes." << endl;
 
-    int n_int = INT_MAX;
-    short n_short = SHRT_MAX;
-    long n_long = LONG_MAX;
-
-    cout << "int is " << sizeof(n_int) << " bytes." << endl;
-    cout << "short is " << sizeof(n_short) << " bytes." << endl;
-    cout << "long is " << sizeof(n_long) << " bytes." << endl;
-
-    cout << "Maximum values:" << endl;
-    cout << "int:" << n_int
-         << "\tshort:" << n_short
-         << "\tlong:" << n_long << endl;
-
-    cout << "int min:" << INT_MIN << endl;
     cout << "bit:" << CHAR_BIT << endl;
+
+
+    printUnsignedNumber();
 }
 
-void printUnsignedNumber()
-{
+void printUnsignedNumber() {
+    cout << "----Unsigned Number----" << endl;
     short s1;
     signed short s2;
     unsigned short s3;
@@ -55,5 +62,5 @@ void printUnsignedNumber()
     unsigned char c2;
     signed char c3;
     cout << "Char Type: " << c1 << "\t" << c2 << "\t" << c3 << endl;
-
+    cout << "----Unsigned Number----" << endl;
 }
