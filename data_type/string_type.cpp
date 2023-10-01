@@ -1,11 +1,14 @@
 //
 // Created by 叶小辉 on 2023/6/16.
 //
+
+// 字符串
 #include <iostream>
 
 using namespace std;
 
 int main() {
+    char str1[] = "hello world";
     double salary = 9999.99,
             wage(salary + 0.01);
 // ok: mix of initialized and uninitialized
