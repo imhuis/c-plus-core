@@ -13,6 +13,7 @@ using namespace std;
  */
 
 void printPtr();
+void swap(int *p1, int *p2);
 
 int main() {
 //    printPtr();
@@ -23,6 +24,16 @@ int main() {
     // 指针常量，需要一开始初始化指针
     int * const ptrr = nullptr;
 
+
+    int *p1 = new int (1);
+    int *p2 = new int (2);
+    swap(p1, p2);
+    cout << *p1 << "\t" << *p2 << endl;
+
+    int i1 = 3;
+    int i2 = 4;
+    swap(&i1, &i2);
+    cout << i1 << "\t" << i2 << endl;
 }
 
 void printPtr() {
@@ -35,4 +46,10 @@ void printPtr() {
 
     int *np = NULL;
     cout << "null pointer's address: " << np << endl;
+}
+
+void swap(int * p1, int * p2) {
+    int temp = *p1;
+    *p1 = *p2;
+    *p2 = temp;
 }

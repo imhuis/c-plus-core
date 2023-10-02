@@ -9,6 +9,12 @@
 using namespace std;
 
 int main() {
+    int abc = 123;
+    int cba = 321;
+    // 引用必须初始化
+    int &ref = abc;
+    //
+    ref = cba;
     // 常量必须初始化
     int a = 0;
     const int aa = 1;
