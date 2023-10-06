@@ -3,7 +3,8 @@
 // 友元类的示例
 //
 
-#include <iostream>
+#include "class_member.h"
+#include "iostream"
 
 using namespace std;
 
@@ -34,4 +35,19 @@ public:
 
 double oper::add(friendlyClz a, friendlyClz b) {
     return a.a + a.b;
+}
+
+void GodGay::visit(House *house) {
+    // 友元类才能访问 house->bedRoom
+    cout << "好朋友类， " << house->settingRoom << house->bedRoom << endl;
+}
+
+void visit(House *house){
+    cout << "正在访问 " << house->settingRoom << endl;
+    cout << "正在访问 " << house->bedRoom << endl; // 友元函数
+}
+
+int main() {
+    House h;
+    visit(&h);
 }
