@@ -50,8 +50,20 @@ public:
 
 class House;
 
-class GodGay {
+class GoodGay {
+public:
     void visit(House* house);
+};
+
+
+class GoodFriend {
+    House *house;
+public:
+    GoodFriend();
+    // 可以访问House
+    void visit1();
+    // 不可以访问House
+    void visit2();
 };
 
 class House {
@@ -66,9 +78,12 @@ private:
 
     // 全局函数作为友元，greeting是House的友元，可以访问House中的私有成员
     friend void visit(House *house);
+
     // 友元类，GodGay是House的友元类可以访问私有成员
-    friend class GodGay;
+    friend class GoodGay;
+
     // 友元函数
+    friend void GoodFriend::visit1();
 };
 
 void visit(House *house);
