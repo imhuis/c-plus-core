@@ -2,7 +2,7 @@
 // Created by 叶小辉 on 2023/5/6.
 //
 
-#include "student.h"
+#include "object/student.h"
 #include <iostream>
 
 int main() {

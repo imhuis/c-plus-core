@@ -6,8 +6,8 @@
 * 常量成员
 */
 
-#include "my_date.h"
-#include "student.h"
+#include "object/my_date.h"
+#include "object/student.h"
 class K;
 
 class K{

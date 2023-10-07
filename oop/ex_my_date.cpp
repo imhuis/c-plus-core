@@ -2,7 +2,7 @@
 // Created by 叶小辉 on 2023/5/2.
 //
 
-#include "my_date.h"
+#include "object/my_date.h"
 #include <iostream>
 
 using namespace std;
@@ -56,4 +56,8 @@ int MyDate::getMonth() {
 
 void MyDate::printData() const {
     cout << "Date: " << year << "/" << month << "/" << day << endl;
+}
+
+int main() {
+
 }
