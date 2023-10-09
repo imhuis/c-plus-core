@@ -2,7 +2,7 @@
 // Created by 叶小辉 on 2023/5/4.
 //
 
-#include "my_class.h"
+#include "object/my_class.h"
 #include <iostream>
 
 using namespace std;
