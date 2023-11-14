@@ -2,7 +2,6 @@
 // Created by 叶小辉 on 2023/10/1.
 //
 
-#include "pointer_example.h"
 #include "iostream"
 
 using namespace std;

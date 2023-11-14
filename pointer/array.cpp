@@ -14,9 +14,8 @@ int main()
     string fileTable[max_files + 1]; // ok: constant expression
     double salaries[staff_size]; // error: non const variable
 
-
-    char ca1[] = {'C', '+', '+'}; // no null
-    char ca2[] = {'C', '+', '+', '\0'}; // explicit null
-    char ca3[] = "C++"; // null terminator added automatically
+    int A[10];
+    // 实际上是一个指针
+    int *ap = A;
 
 }

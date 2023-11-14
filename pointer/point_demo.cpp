@@ -2,7 +2,6 @@
 // Created by 叶小辉 on 2023/5/4.
 //
 
-#include "point_demo.h"
 #include <iostream>
 
 using namespace std;
