@@ -2,7 +2,7 @@
 using namespace std;
 
 /**
- * demo for cpp
+ * overview for cpp
  * @return
  */
 int main()
