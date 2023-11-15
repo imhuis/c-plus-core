@@ -6,6 +6,12 @@
 
 using namespace std;
 
+/**
+ * B[i][j] = *(B[i] + j)
+ *         = *(*(B+i) + j)
+ * @return
+ */
+
 int main() {
     int A[2][3] = {{2,4,6}, {8,9,10}};
 
